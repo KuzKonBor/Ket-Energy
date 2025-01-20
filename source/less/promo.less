@@ -1,0 +1,44 @@
+@line-promo: 20px;
+
+.font-promo(@font-size, @line-height: @line-promo) {
+    font-family: "Oswald", sans-serif;
+    font-size: @font-size;
+    line-height: @line-height;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.promo {
+    background-image: url("../img/png/index-background-desktop\ 2.png");
+    background-color: rgba(104, 183, 56, 0.85);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.promo__heading {
+    .font-promo(@line-promo * 1.8, @line-promo * 1.8);
+    text-align: center;
+    margin: 0;
+    padding-top: 27px;
+    margin-bottom: 25px;
+}
+
+.promo__slogan {
+    .font-promo(@line-promo * 0.7, @line-promo * 0.7);
+    text-align: center;
+    margin: 0;
+    margin-bottom: 29px;
+}
+
+.promo__image {
+    width: 280px;
+    height: 270px;
+}
+
+.promo__button {
+    .font-promo(@line-promo * 0.7, @line-promo * 0.9);
+    display: block;
+    text-align: center;
+}
