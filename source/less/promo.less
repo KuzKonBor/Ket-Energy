@@ -1,6 +1,4 @@
-@line-promo: 20px;
-
-.font-promo(@font-size, @line-height: @line-promo) {
+.set-font(@font-size, @line-height: @line) {
     font-family: "Oswald", sans-serif;
     font-size: @font-size;
     line-height: @line-height;
@@ -18,7 +16,8 @@
 }
 
 .promo__heading {
-    .font-promo(@line-promo * 1.8, @line-promo * 1.8);
+    .set-font(@line * 3.6, @line * 36);
+    .font("Oswald", sans-serif; 400; #ffffff);
     text-align: center;
     margin: 0;
     padding-top: 27px;
@@ -26,7 +25,7 @@
 }
 
 .promo__slogan {
-    .font-promo(@line-promo * 0.7, @line-promo * 0.7);
+    .set-font(@line * 1.4, @line * 1.4);
     text-align: center;
     margin: 0;
     margin-bottom: 29px;
@@ -38,7 +37,7 @@
 }
 
 .promo__button {
-    .font-promo(@line-promo * 0.7, @line-promo * 0.9);
+    .set-font(@line * 1.4, @line * 1.8);
     display: block;
     text-align: center;
 }

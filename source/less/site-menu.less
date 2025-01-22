@@ -1,24 +1,14 @@
-@line-menu: 20px;
-
-.font-menu(@font-size, @line-height: @line-menu) {
-    font-family: "Oswald", sans-serif;
-    font-size: @font-size;
-    line-height: @line-height;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000000;
-}
-
 .site-menu {
     display: block;
     text-align: center;
-    text-transform: uppercase;
     margin: 0;
     padding: 0;
 }
 
 .site-menu__link {
-    .font-menu(@line-menu);
+    .set-font(@line * 2, @line * 2);
+    .font("Oswald", sans-serif; 500; #000000; uppercase);
+    text-decoration: none;
 }
 
 .site-menu__item {
