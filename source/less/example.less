@@ -4,14 +4,31 @@
 
 .example__heading {
     .set-font(@line * 3.6, @line * 4);
-    .font("Oswald", sans-serif; 400; #000000; uppercase);
+    .font-style("Oswald", sans-serif, 400, #000000, uppercase);
 }
 
 .example__text {
     .set-font(@line * 1.4, @line * 1.8);
-    .font("Arial", sans-serif; 400; #000000);
+    .font-style("Arial", sans-serif, 400, #000000, none);
 }
 
 .example__title {
-    font-size: 50px;
+    .set-font(@line * 1.2, @line * 1.2);
+    .font-style("Arial", sans-serif, 400, #000000, none);
+}
+
+.example__definition {
+    .set-font(@line * 2.4, @line * 2.4);
+    .font-style("Oswald", sans-serif, 400, #000000, uppercase);
+}
+
+
+.example__spending {
+    .set-font(@line * 1.4, @line * 2);
+    .font-style("Oswald", sans-serif, 400, #000000, uppercase);
+}
+
+.switcher__button {
+    .set-font(@line * 1.6, @line * 2);
+    .font-style("Oswald", sans-serif, 400, #000000, uppercase);
 }
